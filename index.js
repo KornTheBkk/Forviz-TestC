@@ -8,7 +8,7 @@ const mongodb = 'mongodb://kornthebkk:x34udwe34bv@ds023425.mlab.com:23105/proper
 //const mongodb = 'mongodb://localhost:27017/property'
 mongoose.connect(mongodb);
 
-const port = 3000;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 
@@ -23,4 +23,4 @@ app.get('/', (req, res) => {
     res.send('nodejs server works!');
 });
 
-app.listen(port, () => console.log('Server is running on localhost:' + port));
+app.listen(PORT, () => console.log('Server is running on localhost:' + PORT));
