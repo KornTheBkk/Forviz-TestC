@@ -20,6 +20,7 @@ $ npm start
 
 # Routing
 GET /api/properties/search
+
     Search by uniq Id (?uniq_id=00954d18277acc4bf9080370b1e0bcfe)
     Search by uniq Id (?uniq_id=00954d18277acc4bf9080370b1e0bcfe)
     Search by property_type (?property_type=Hotel)
