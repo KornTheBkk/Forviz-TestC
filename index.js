@@ -4,8 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 /** Connect MongoDB */
-const mongodb = 'mongodb://kornthebkk:x34udwe34bv@ds023425.mlab.com:23105/property';
-//const mongodb = 'mongodb://localhost:27017/property'
+const mongodb = 'mongodb://localhost:27017/property'
 mongoose.connect(mongodb);
 
 const PORT = process.env.PORT || 5000;
