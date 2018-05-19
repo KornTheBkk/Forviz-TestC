@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Video = require('../models/property');
+const Property = require('../models/property');
 
 
 router.get('/', (req, res) => {
@@ -58,9 +58,9 @@ router.get('/search', (req, res) => {
  
     // convert to json object
     criteria = JSON.parse(`{${criteria}}`);
-    console.log(criteria);
+    //console.log(criteria);
 
-    Video.find(criteria)
+    Property.find(criteria)
         .then(results => {
             res.status(200).send({ total: results.length, data: results });
         })
